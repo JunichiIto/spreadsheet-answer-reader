@@ -1,0 +1,11 @@
+sheet_id: (your-spreadsheet-id)
+full_point: 5
+targets:
+  speaker_a:
+    point_col: B
+    desc_col: C
+  speaker_b:
+    point_col: D
+    desc_col: E
+sex_col: R
+name_col: S
