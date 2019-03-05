@@ -19,5 +19,5 @@ end
 
 if __FILE__ == $0
   with_name = ARGV[0] == '1'
-  SpreadsheetAnswerReader::AnswerReader.read(with_name: with_name)
+  puts SpreadsheetAnswerReader::AnswerReader.read(with_name: with_name)
 end

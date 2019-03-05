@@ -8,9 +8,9 @@ module SpreadsheetAnswerReader
       session = GoogleDrive::Session.from_config('config.json')
       ws = session.spreadsheet_by_key(SHEET_ID).worksheets[0]
 
-      TARGETS.each do |name, definitions|
-        puts read_for(ws, name, definitions, with_name: with_name)
-      end
+      TARGETS.map { |name, definitions|
+        read_for(ws, name, definitions, with_name: with_name)
+      }.join("\n")
     end
 
     private
