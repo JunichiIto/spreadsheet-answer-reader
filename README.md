@@ -3,6 +3,13 @@ Script for reading answers in Google spreadsheet
 
 ## Setup
 
+### Install Ruby 2.6+
+
+``` 
+ruby -v                                              
+ruby 2.6.1p33 (2019-01-30 revision 66950) [x86_64-darwin18]
+```
+
 ### config.json
 
 Add your own `config.json` to the project root. Please see https://github.com/gimite/google-drive-ruby/blob/master/doc/authorization.md
