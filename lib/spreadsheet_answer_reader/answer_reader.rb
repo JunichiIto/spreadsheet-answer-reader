@@ -32,15 +32,15 @@ module SpreadsheetAnswerReader
     def build_results(speaker_name, answers)
       point_table = to_point_table(answers)
       <<~MARKDOWN
-    # #{speaker_name} - アンケート結果
+      # #{speaker_name} - アンケート結果
 
-    #{answers.count}件の回答
+      #{answers.count}件の回答
 
-    #{FULL_POINT}点満点のうち #{calc_avg(answers)}
+      #{FULL_POINT}点満点のうち #{calc_avg(answers)}
 
-    #{build_star_counts(point_table, answers.count)}
+      #{build_star_counts(point_table, answers.count)}
 
-    #{build_details(answers)}
+      #{build_details(answers)}
       MARKDOWN
     end
 

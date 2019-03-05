@@ -15,10 +15,10 @@ module SpreadsheetAnswerReader
 
     def to_md
       <<~MARKDOWN
-    #{name}（#{sex}）  
-    評価 #{self.class.build_star_count(point)}  
+      #{name}（#{sex}）  
+      評価 #{self.class.build_star_count(point)}  
 
-    #{add_two_spaces(desc)}
+      #{add_two_spaces(desc)}
       MARKDOWN
     end
 
