@@ -1,4 +1,7 @@
+# Choose google or excel
+google_or_excel: excel
 sheet_id: (your-spreadsheet-id)
+xlsx_path: "/to/your/path.xlsx"
 full_point: 5
 targets:
   speaker_a:
